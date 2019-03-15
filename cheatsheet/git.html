@@ -3,51 +3,92 @@
 
 <head>
     <title>Cheatsheets for Git</title>
+    <style>
+        body {
+        }
+
+        p {
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .container {
+            margin-bottom: 3em;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 2em;
+        }
+
+        .highlight {
+            color: red;
+        }
+
+        .comment {
+            color: rgb(29, 68, 245);
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>What I learned about Bash</h1>
+    <div class="container">
+        <!-- Title -->
+        <h1>
+            <span>What I learned about</span>
+            <span class="highlight">Bash</span>
+        </h1>
 
-    <h3>Starting (local) repo</h3>
-    <ul>
-        <li>
-            <code>git init</code>
-        </li>
-    </ul>
+        <h3>Starting (local) repo</h3>
+        <ul>
+            <li>
+                <code>git init</code>
+            </li>
+        </ul>
 
-    <h3>Starting with repo from GitHub</h3>
-    <ul>
-        <li>
-            <code>git clone https://github.com/user/repo</code>
-        </li>
-    </ul>
+        <h3>Starting with repo from GitHub</h3>
+        <ul>
+            <li>
+                <code>git clone https://github.com/user/repo</code>
+            </li>
+        </ul>
 
-    <h3>Adding and committing</h3>
-    <ul>
-        <li>
-            <code>git add .</code> <i># "Stage" all</i>
-        </li>
-        <li>
-            <code>git commit -m "Fixed :)"</code>
-        </li>
-    </ul>
+        <h3>Adding and committing</h3>
+        <ul>
+            <li>
+                <code>git add .</code> <i class="comment"># "Stage" all</i>
+            </li>
+            <li>
+                <code>git commit -m "Fixed :)"</code>
+            </li>
+        </ul>
 
-    <h3>Github workflow</h3>
-    <ul>
-        <li>
-            <p><i># After you do some work...</i></p>
-        </li>
-        <li>
-            <code>git add .</code>
-        </li>
-        <li>
-            <code>git commit -m "it works!"</code>
-        </li>
-        <li>
-            <code>git push origin master</code>
-        </li>
-    </ul>
+        <h3>Github workflow</h3>
+        <ul>
+            <li>
+                <p><i class="comment"># After you do some work...</i></p>
+                <code>git add .</code>
+            </li>
+            <li>
+                <code>git commit -m "it works!"</code>
+            </li>
+            <li>
+                <code>git push origin master</code>
+            </li>
+        </ul>
+    </div>
+
 
 </body>
 
